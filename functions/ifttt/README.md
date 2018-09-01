@@ -30,8 +30,8 @@
 - 右上のユーザ名をクリック→ [New Applet](https://ifttt.com/create) をクリックするなどして、[Applet作成画面](https://ifttt.com/create)を開きます
 - `+this`をクリックし、検索窓に `webhooks` と入れ、Webhooks アイコンをクリックします
 - `Recieve a web request` をクリックします
-- `Event Name` はプレイスメント属性で明示的に指定した場合にはその値(`BUTTON`等)を入れます。
-  ※ もし`event`の設定を省略した場合には ** `SINGLE`/`DOUBLE`/`LONG` それぞれに Applet を作成する必要があるので、注意が必要です**
+- `Event Name` はプレイスメント属性で明示的に指定した場合にはその値(`BUTTON`等)を入れます。  
+  > ※ もし`event`の設定を省略した場合には `SINGLE`/`DOUBLE`/`LONG` それぞれに Applet を作成する必要があるので、注意が必要です
 - `+that` をクリックし、`Action` を選びます (例えば Gmail など)
 - `Action` の種類を選択し(例えば `Send yourself an email` )、フィールドを定義します
   - この際、`value1`/`value2`/`value3` や `EventName` を指定することで、クリックの種類やボタンの設置場所の名前などを件名やメッセージに含むことが出来ます
