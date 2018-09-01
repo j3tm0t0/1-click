@@ -1,0 +1,8 @@
+{
+  "name": "1-click",
+  "description": "sample lambda functions for AWS 1-click service",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::000000000000:role/1-click_lambda_function",
+  "environment": {}
+}
