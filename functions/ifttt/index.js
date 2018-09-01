@@ -10,7 +10,7 @@ const replaceValues = (str, e) => {
   ret_val = ret_val.replace('$clickType', e.deviceEvent.buttonClicked.clickType)
   ret_val = ret_val.replace('$projectName', e.placementInfo.projectName)
   ret_val = ret_val.replace('$placementName', e.placementInfo.placementName)
-  ret_val = ret_val.replace(/\$([\w]+)g/,function(){return e.placementInfo.attributes[RegExp.$1] || "No Attributes named: '"+RegExp.$1 + "' found"})
+  ret_val = ret_val.replace(/\$([\w]+)/g,function(){return e.placementInfo.attributes[RegExp.$1] || "No Attributes named: '"+RegExp.$1 + "' found"})
   return ret_val;
 }
 
