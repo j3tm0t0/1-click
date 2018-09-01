@@ -105,3 +105,4 @@ venv.bak/
 
 project.json
 *.swp
+.DS_Store
