@@ -1,8 +1,6 @@
 const https = require('https');
 const url = require('url');
 
-// curl -X POST -H "Content-Type: application/json" -d '{"value1":"AV6XDA64LXCY0044","value2":"moto-wio-sorako","value3":"100"}' https://maker.ifttt.com/trigger/SINGLE/with/key/cA1jMv99wwmhygZ29t6yIy
-
 const replaceValues = (str, e) => {
   var ret_val = str;
   ret_val = ret_val.replace('$deviceId', e.deviceInfo.deviceId)
