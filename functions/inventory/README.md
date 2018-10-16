@@ -15,7 +15,7 @@
 - [AWS IoT 1-Click のコンソール](https://ap-northeast-1.console.aws.amazon.com/iot1click/home)を開きます。
 - デバイスを登録します
 - [プロジェクトを新規作成します](https://ap-northeast-1.console.aws.amazon.com/iot1click/home?region=ap-northeast-1#/create/project)
- - プロジェクト名 : IFTTT など
+ - プロジェクト名 : SORACOM など
 - プロジェクトのプレイスメントのテンプレートの定義 をします。
  - デバイステンプレート定義
  ![デバイステンプレート](../../images/inventory/device_template.png)
