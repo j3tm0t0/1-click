@@ -58,4 +58,5 @@ Unpacking objects: 100% (14/14), done.
 
 # 使い方
 それぞれの function の README を参照して下さい
-- [ifttt連携](functions/ifttt)
+- [IFTTT連携](functions/ifttt)
+- [SORACOM Inventory連携](functions/inventory)
