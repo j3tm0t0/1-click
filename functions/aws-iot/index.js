@@ -1,6 +1,6 @@
 const AWS = require('aws-sdk');
-const endpoint = process.env['ENDPOINT'] || 'https://data.iot.ap-northeast-1.amazonaws.com'
-const iotdata = new AWS.IotData({endpoint: endpoint});
+const endpoint = process.env['ENDPOINT'] || 'data.iot.ap-northeast-1.amazonaws.com'
+const iotdata = new AWS.IotData({endpoint: 'https://'+endpoint});
 const default_topic = process.env['TOPIC'] || 'buttons'
 const default_qos = process.env['QOS'] || 0
 
