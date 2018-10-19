@@ -4,12 +4,6 @@ const iotdata = new AWS.IotData({endpoint: endpoint});
 const default_topic = process.env['TOPIC'] || 'buttons'
 const default_qos = process.env['QOS'] || 0
 
-const clickTypes={
-  "SINGLE":1,
-  "DOUBLE":2,
-  "LONG":3
-}
-
 exports.handle = async (e) => {
   console.log(e)
   let deviceId = e.deviceInfo.deviceId
