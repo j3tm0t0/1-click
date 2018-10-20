@@ -9,10 +9,12 @@ exports.handle = async (e) => {
   let deviceId = e.deviceInfo.deviceId
   let topic = e.placementInfo.attributes.topic || default_topic
   let qos = e.placementInfo.attributes.qos || 0
+  let clickType = e.deviceEvent.buttonClicked.clickType
+  let payload = e.placementInfo.attributes[clickType] || JSON.stringify(p)
   try {
     const params = {
       topic: topic+"/"+deviceId,
-      payload: JSON.stringify(e),
+      payload: payload,
       qos: qos
     };
     const result = await iotdata.publish(params).promise();
