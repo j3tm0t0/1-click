@@ -58,5 +58,10 @@ Unpacking objects: 100% (14/14), done.
 
 # 使い方
 それぞれの function の README を参照して下さい
+- [AWS IoT 連携](functions/aws-iot)
+- [AWS IoT Thing Shadow 連携](functions/aws-iot-shadow)
+- [AWS CloudWatch 連携](functions/cloudwatch)
 - [IFTTT連携](functions/ifttt)
 - [SORACOM Inventory連携](functions/inventory)
+- [Line Bot 連携](functions/line-bot_py)
+- [slack 連携](functions/slack)
