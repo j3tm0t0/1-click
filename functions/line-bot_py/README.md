@@ -86,12 +86,14 @@ LINE@ MANAGER で削除できます。復活はできません。人生はやり
 - [AWS IoT 1-Click のコンソール](https://ap-northeast-1.console.aws.amazon.com/iot1click/home)を開きます。
 - デバイスを登録します
 - [プロジェクトを新規作成します](https://ap-northeast-1.console.aws.amazon.com/iot1click/home?region=ap-northeast-1#/create/project)
- - プロジェクト名 : `LINE` など(任意)
+  - プロジェクト名 : `LINE` (任意)
 - プロジェクトのプレイスメントのテンプレートの定義 をします。
- - デバイステンプレート定義
- <img src="https://docs.google.com/drawings/d/e/2PACX-1vShxcHycr1RTeBXTyu-XKVHdyUwAaHOQMPm-6_Ues6Rp1STah61rZd6PVFboi2h-YMcu6xP5VbuNU2H/pub?w=878&amp;h=626"  alt="1-click_apex_document / line-bot_py-template">
+  - デバイステンプレート定義
+    - デバイステンプレート名: `LINE` (任意)
+    - アクション: **Lambda 関数の選択**
+    - AWS リージョン: (Lambda 関数のデプロイ先リージョンを指定)
+    - Lambda 関数: `1-click_line-bot_py` (もしくは別の名前)
  - プレイスメントの属性
- <img src="https://docs.google.com/drawings/d/e/2PACX-1vReHE-F6sd0b2NXDzCRTsaG3DGaY2eM0iphKDm7GJO288FiV20Ya7qiaCZj3Us3mySQZnhdWjugyYZN/pub?w=881&amp;h=222" alt="1-click_apex_document / line-bot_py-placement">
    - このテンプレート全体で共通する属性の設定となります (後述通り、プレイスメント毎に上書きすることも出来ます)
    - **token と to は必須項目です、準備でメモしておいたものを入れます**
       - _token_ : アクセストークン（ロングターム）
