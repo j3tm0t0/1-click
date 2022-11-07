@@ -26,7 +26,7 @@ exports.handle = function(e, ctx, cb) {
     cb("coudl not find eventName")
   }
   var webhookUrl = "https://maker.ifttt.com/trigger/"+eventName+"/with/key/"+key
-  webhookOptions = url.parse(webhookUrl)
+  webhookOptions = new URL(webhookUrl)
   webhookOptions.headers = {'Content-TYpe':'application/json'}
   var a = e.placementInfo.attributes
   var values = []
